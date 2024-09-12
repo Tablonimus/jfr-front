@@ -1,0 +1,16 @@
+header {
+  background-image: url(./assets/images/header2.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: ; */
+}
+
+nav{
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
