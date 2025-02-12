@@ -1,5 +1,5 @@
 import React from "react";
-import bioimg from "../assets/images/header3.jpg";
+import bioimg from "../../assets/images/header3.jpg";
 
 export default function Bio() {
   return (

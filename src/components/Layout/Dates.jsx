@@ -1,5 +1,5 @@
 import React from "react";
-import jfr1 from "../assets/images/jfr-edit.png";
+import jfr1 from "../../assets/images/jfr-edit.png";
 
 export default function Dates() {
   return (
