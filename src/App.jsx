@@ -19,8 +19,7 @@ function App() {
         <Bio />
         <Dates />
         <section className="w-1/2">CONTACTO</section>
-        <section className="w-1/2">CONTACTO</section>
-        <section className="w-1/2">CONTACTO</section>
+
       </main>
     </div>
   );
