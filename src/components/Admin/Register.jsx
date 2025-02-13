@@ -42,7 +42,7 @@ const Register = () => {
           <img className="rounded-full" src={logo} alt="logo" />
         </picture>
         <ul className="flex gap-6 xl:gap-10 2xl:gap-12">
-          <li className="text-sky-700 border-l-2 border-zinc-400 pl-2 xl:pl-3 py-1 hover:scale-105 hover:text-sky-600 duration-500 ">
+          <li className="text-rose-600 border-l-2 border-zinc-400 pl-2 xl:pl-3 py-1 hover:scale-105 hover:text-rose-600 duration-500 ">
             <Link to={"/"}>Home </Link>
           </li>
         </ul>
@@ -56,7 +56,7 @@ const Register = () => {
             <p> {error} </p>
           </div>
         ))}
-        <h2 className="text-center font-title text-6xl font-extrabold text-sky-600">
+        <h2 className="text-center font-title text-6xl font-extrabold text-rose-600">
           Register
         </h2>
         <p className="text-center text-zinc-400 font-text text-base">
@@ -76,7 +76,7 @@ const Register = () => {
                 },
               })}
             />
-            <label className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-sky-600 peer-focus:text-sm">
+            <label className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-rose-600 peer-focus:text-sm">
               Username
               <p className="error absolute left-32  -top-2 m-2 text-base font-semibold text-[#da8e88] w-64">
                 {errors.username?.message}
@@ -99,7 +99,7 @@ const Register = () => {
               })}
             />
             <label
-              className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-sky-600 peer-focus:text-sm"
+              className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-rose-600 peer-focus:text-sm"
               htmlFor="email"
             >
               Email
@@ -125,7 +125,7 @@ const Register = () => {
               })}
             />
             <label
-              className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-sky-600 peer-focus:text-sm"
+              className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-rose-600 peer-focus:text-sm"
               htmlFor="password"
             >
               Password
@@ -136,7 +136,7 @@ const Register = () => {
           </div>
 
           <button
-            className="w-full font-text  py-2 px-4 border-[1px] border-slate-300 hover:bg-zinc-600 rounded-md shadow-lg text-white bg-sky-600 font-semibold transition duration-500 hover:text-white"
+            className="w-full font-text  py-2 px-4 border-[1px] border-slate-300 hover:bg-zinc-600 rounded-md shadow-lg text-white bg-rose-600 font-semibold transition duration-500 hover:text-white"
             type="submit"
           >
             Register
@@ -144,7 +144,7 @@ const Register = () => {
         </form>
         <div className="text-center text-zinc-400 font-text">
           Do you have an account?
-          <Link className="text-sky-600 ml-1 hover:underline" to="/login">
+          <Link className="text-rose-600 ml-1 hover:underline" to="/login">
             <strong>Login</strong>{" "}
           </Link>
         </div>

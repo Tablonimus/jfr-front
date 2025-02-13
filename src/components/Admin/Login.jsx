@@ -47,14 +47,14 @@ const Login = () => {
             <img className="rounded-full" src={logo} alt="logo" />
           </picture>
           <ul className="flex gap-6 xl:gap-10 2xl:gap-12">
-            <li className="text-sky-700 border-l-2 border-zinc-400 pl-2 xl:pl-3 py-1 hover:scale-105 hover:text-sky-600 duration-500 ">
+            <li className="text-rose-600 border-l-2 border-zinc-400 pl-2 xl:pl-3 py-1 hover:scale-105 hover:text-rose-600 duration-500 ">
               <Link to={"/"}>Home </Link>
             </li>
           </ul>
         </nav>
 
         <div className="max-w-md w-full  rounded-xl shadow-2xl shadow-gray-900 overflow-hidden py-8 px-4 space-y-8 ">
-          <h2 className="text-center font-title text-6xl font-extrabold text-sky-600">
+          <h2 className="text-center font-title text-6xl font-extrabold text-rose-600">
             Welcome
           </h2>
           {loginError?.map((error, i) => (
@@ -85,7 +85,7 @@ const Login = () => {
                 })}
               />
               <label
-                className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-sky-600 peer-focus:text-sm"
+                className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-rose-600 peer-focus:text-sm"
                 htmlFor="email"
               >
                 Email
@@ -111,7 +111,7 @@ const Login = () => {
                 })}
               />
               <label
-                className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-sky-600 peer-focus:text-sm"
+                className="absolute left-0 -top-3.5 text-white text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-rose-600 peer-focus:text-sm"
                 htmlFor="password"
               >
                 Password
@@ -122,7 +122,7 @@ const Login = () => {
             </div>
 
             <button
-              className="w-full font-text  py-2 px-4 border-[1px] border-slate-300 bg-sky-600 rounded-md shadow-lg text-white font-semibold hover:bg-zinc-600 transition duration-500"
+              className="w-full font-text  py-2 px-4 border-[1px] border-slate-300 bg-rose-600 rounded-md shadow-lg text-white font-semibold hover:bg-zinc-600 transition duration-500"
               type="submit"
             >
               Sign In
@@ -132,7 +132,7 @@ const Login = () => {
             Don't have an account?
             <Link
               to={"/register"}
-              className="text-sky-600 ml-2 hover:underline"
+              className="text-rose-600 ml-2 hover:underline"
             >
               <strong>Register</strong>{" "}
             </Link>

@@ -78,7 +78,7 @@ const EventsForm = ({ events, setEvents }) => {
     }
   };
 
-  
+
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <section className="w-full rounded-xl border-zinc-700 border overflow-hidden py-6 px-4 space-y-6 md:space-y-7 md:w-[550px] xl:w-[800px] xl:py-8">
@@ -94,7 +94,7 @@ const EventsForm = ({ events, setEvents }) => {
               <input
                 autoComplete="off"
                 placeholder="Joe Doe"
-                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600"
+                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-rose-600"
                 name="title"
                 {...register("title", {
                   required: {
@@ -111,7 +111,7 @@ const EventsForm = ({ events, setEvents }) => {
               <input
                 autoComplete="off"
                 placeholder="description"
-                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600"
+                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-rose-600"
                 name="description"
                 {...register("description", {
                   required: {
@@ -130,7 +130,7 @@ const EventsForm = ({ events, setEvents }) => {
               <input
                 autoComplete="off"
                 placeholder="john@example.com"
-                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600 "
+                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-rose-600 "
                 name="location"
                 {...register("location", {
                   required: {
@@ -147,7 +147,7 @@ const EventsForm = ({ events, setEvents }) => {
               <input
                 autoComplete="off"
                 placeholder="john@example.com"
-                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-sky-600 "
+                className="peer h-10 w-full border-b-2 border-zinc-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-rose-600 "
                 name="date"
                 {...register("date", {
                   required: {
@@ -180,7 +180,7 @@ const EventsForm = ({ events, setEvents }) => {
           </div>
           <div className="flex items-center justify-center ">
             <button
-              className="w-full font-text  py-2 px-4 border-[1px] border-zinc-600 bg-sky-600 hover:bg-whiteCustom rounded-md shadow-lg text-white font-semibold transition duration-500 hover:text-gray-500 xl:w-[80%] xl:self-center "
+              className="w-full font-text  py-2 px-4 border-[1px] border-zinc-600 bg-rose-600 hover:bg-whiteCustom rounded-md shadow-lg text-white font-semibold transition duration-500 hover:text-gray-500 xl:w-[80%] xl:self-center "
               type="submit"
             >
               Submit
@@ -189,7 +189,7 @@ const EventsForm = ({ events, setEvents }) => {
         </form>
       </section>
 
-      <section className="flex flex-wrap  gap-y-6 gap-x-4 mt-10 justify-center items-start md:gap-y-10 lg:px-6  xl:mt-24 xl:gap-x-9 xl:gap-y-9">
+      <section className="w-full flex flex-wrap items-center justify-center gap-8 mt-14 xl:mt-20">
         {events.map((event, i) => (
           <CardAdminEvent
             key={i}

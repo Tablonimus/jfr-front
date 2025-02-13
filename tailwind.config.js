@@ -14,8 +14,11 @@ export default {
       "2xl": "1650px",
     },
     extend: {
-      colors:{
-        whiteCustom:"#F2F0E4",
+      colors: {
+        whiteCustom: "#F2F0E4",
+        redCustom: "#C51D34",
+        blackCustom: "#2E2E30",
+        gray: "#808080",
       },
       fontFamily: {
         title: ["Ubuntu", "sans-serif"],
