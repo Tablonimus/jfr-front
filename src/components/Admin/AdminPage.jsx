@@ -9,10 +9,10 @@ const AdminPage = () => {
   const navigate = useNavigate();
   const [events, setEvents] = useState([]);
 
-  /* useEffect(() => {
+  useEffect(() => {
     verifyAuth();
   }, []);
- */
+
   useEffect(() => {
     const fetchEvents = async () => {
       try {
