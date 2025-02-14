@@ -37,7 +37,7 @@ const Register = () => {
 
   return (
     <section className="bg-whiteCustom h-screen w-full flex flex-col px-4 gap-14 items-center xl:px-10 2xl:gap-20 2xl:px-12">
-      <nav className="font-text2 text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-2xl  2xl:px-20 ">
+      <nav className="font-title text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-2xl  2xl:px-20 ">
         <picture className="w-12 h-12 flex items-center justify-center rounded-full xl:w-16 xl:h-16  2xl:w-20 2xl:h-20 ">
           <img className="rounded-full" src={logo} alt="logo" />
         </picture>
@@ -47,7 +47,7 @@ const Register = () => {
           </li>
         </ul>
       </nav>
-      <div className="max-w-md w-full  rounded-xl shadow-2xl shadow-gray-900 overflow-hidden py-8 px-4 space-y-8">
+      <div className="max-w-md w-full rounded-xl shadow-2xl shadow-gray-900 overflow-hidden py-8 px-4 space-y-8">
         {registerError?.map((error, i) => (
           <div
             key={i}
@@ -59,11 +59,11 @@ const Register = () => {
         <h2 className="text-center font-title text-6xl font-extrabold text-rose-600">
           Register
         </h2>
-        <p className="text-center text-zinc-400 font-text text-base">
+        <p className="text-center text-zinc-400 font-text2 text-base">
           Create your account
         </p>
         <form onSubmit={handleSubmit(submit)} className="space-y-6">
-          <div className="relative font-text">
+          <div className="relative font-text2">
             <input
               autoComplete="off"
               placeholder="Joe Doe"
@@ -83,7 +83,7 @@ const Register = () => {
               </p>
             </label>
           </div>
-          <div className="relative font-text">
+          <div className="relative font-text2">
             <input
               autoComplete="off"
               placeholder="john@example.com"
@@ -108,7 +108,7 @@ const Register = () => {
               </p>
             </label>
           </div>
-          <div className="relative font-text">
+          <div className="relative font-text2">
             <input
               autoComplete="off"
               placeholder="Password"
@@ -136,13 +136,13 @@ const Register = () => {
           </div>
 
           <button
-            className="w-full font-text  py-2 px-4 border-[1px] border-slate-300 hover:bg-zinc-600 rounded-md shadow-lg text-white bg-rose-600 font-semibold transition duration-500 hover:text-white"
+            className="w-full font-text2  py-2 px-4 border-[1px] border-slate-300 hover:bg-zinc-600 rounded-md shadow-lg text-white bg-rose-600 font-semibold transition duration-500 hover:text-white"
             type="submit"
           >
             Register
           </button>
         </form>
-        <div className="text-center text-zinc-400 font-text">
+        <div className="text-center text-zinc-400 font-text2">
           Do you have an account?
           <Link className="text-rose-600 ml-1 hover:underline" to="/login">
             <strong>Login</strong>{" "}

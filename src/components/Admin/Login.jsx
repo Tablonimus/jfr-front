@@ -42,7 +42,7 @@ const Login = () => {
   return (
     <>
       <section className="bg-whiteCustom h-screen w-full flex flex-col px-4 gap-14 items-center xl:px-10 2xl:gap-24 2xl:px-12">
-        <nav className="font-text2 text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-2xl  2xl:px-20 ">
+        <nav className="font-title text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-2xl  2xl:px-20 ">
           <picture className="w-12 h-12 flex items-center justify-center rounded-full xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 ">
             <img className="rounded-full" src={logo} alt="logo" />
           </picture>
@@ -65,11 +65,11 @@ const Login = () => {
               <p> {error} </p>
             </div>
           ))}
-          <p className="font-text text-center text-zinc-400">
+          <p className="font-text2 text-center text-zinc-400">
             Sign in to your account
           </p>
           <form onSubmit={handleSubmit(submit)} className="space-y-6">
-            <div className="relative font-text">
+            <div className="relative font-text2">
               <input
                 autoComplete="off"
                 placeholder="john@example.com"
@@ -94,7 +94,7 @@ const Login = () => {
                 </p>
               </label>
             </div>
-            <div className="relative font-text">
+            <div className="relative font-text2">
               <input
                 autoComplete="off"
                 placeholder="Password"
@@ -122,13 +122,13 @@ const Login = () => {
             </div>
 
             <button
-              className="w-full font-text  py-2 px-4 border-[1px] border-slate-300 bg-rose-600 rounded-md shadow-lg text-white font-semibold hover:bg-zinc-600 transition duration-500"
+              className="w-full font-text2 py-2 px-4 border-[1px] border-slate-300 bg-rose-600 rounded-md shadow-lg text-white font-semibold hover:bg-zinc-600 transition duration-500"
               type="submit"
             >
               Sign In
             </button>
           </form>
-          <div className="text-center text-zinc-400 font-text">
+          <div className="text-center text-zinc-400 font-text2">
             Don't have an account?
             <Link
               to={"/register"}

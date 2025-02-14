@@ -48,7 +48,7 @@ const AdminPage = () => {
 
   return (
     <section className="relative w-full bg-zinc-800 min-h-[140vh] flex flex-col items-center  pb-10 overflow-hidden">
-      <nav className="font-text2 text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-2xl  2xl:px-20 ">
+      <nav className="font-title text-xl  relative flex justify-between items-center w-full  mt-2 px-5 xl:mt-3 xl:px-16 xl:text-xl 2xl:text-2xl 2xl:px-20 ">
         <picture className="w-12 h-12 flex items-center justify-center rounded-full xl:h-16 xl:w-16 2xl:w-20 2xl:h-20 ">
           <img className="rounded-full w-full" src={logo} alt="logo" />
         </picture>
@@ -65,7 +65,7 @@ const AdminPage = () => {
         </ul>
       </nav>
 
-      <div className="mt-9 w-full flex flex-col items-center px-4 xl:mt-14 ">
+      <div className="mt-12 w-full flex flex-col items-center px-4 xl:mt-14 ">
         <EventsForm events={events} setEvents={setEvents} />
       </div>
     </section>

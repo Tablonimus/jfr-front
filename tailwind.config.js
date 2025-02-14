@@ -21,8 +21,9 @@ export default {
         gray: "#808080",
       },
       fontFamily: {
-        title: ["Ubuntu", "sans-serif"],
-        text: ["Inter", "serif"],
+        title: ["Orbitron", "serif"],
+        text: ["Rubik", "serif"],
+        text2: ["Noto Sans", "serif"],
       },
     },
   },
