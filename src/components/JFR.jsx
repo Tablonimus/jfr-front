@@ -3,25 +3,42 @@ import Home from "./Layout/Home";
 import Bio from "./Layout/Bio";
 import Dates from "./Layout/Dates";
 import Contact from "./Layout/Contact";
+import gsap from "gsap";
+import { ReactLenis } from "lenis/react";
+import { useEffect, useRef } from "react";
 
 function JFR() {
-  return (
-    <main className="relative">
-      <nav
-        id="box-glass"
-        className="fixed w-screen lg:px-56 px-10 py-4 flex justify-between items-center z-50"
-      >
-        <img src={navimg} alt="" className="w-14 h-14 object-contain" />
-        <div className="text-xl text-white">|||</div>
-      </nav>
+  const lenisRef = useRef();
 
-      <section className="flex flex-col gap-3">
+  useEffect(() => {
+    function update(time) {
+      lenisRef.current?.lenis?.raf(time * 600);
+    }
+
+    gsap.ticker.add(update);
+
+    return () => gsap.ticker.remove(update);
+  }, []);
+  return (
+    <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
+      <main
+        className="w-full" /* className="relative bg-whiteCustom w-full flex flex-col overflow-hidden" */
+      >
+        <nav className="absolute w-screen px-10 py-4 flex flex-row-reverse justify-between items-center z-50 lg:px-[6%] xl:pt-6">
+          <img src={navimg} alt="" className="w-14 h-14 object-contain" />
+          <div class="loader">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+
         <Home />
         <Bio />
-        <Dates />
+        {/* <Dates /> */}
         <Contact />
-      </section>
-    </main>
+      </main>
+    </ReactLenis>
   );
 }
 
