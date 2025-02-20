@@ -35,7 +35,7 @@ function JFR() {
 
         <Home />
         <Bio />
-        {/* <Dates /> */}
+        <Dates />
         <Contact />
       </main>
     </ReactLenis>

@@ -12,7 +12,7 @@ const Home = () => {
         />
       </figure>
 
-      <article className="z-50 flex flex-col lg:pl-[2%] xl:pb-14">
+      <article className="z-50 flex flex-col pl-3 pb-9 lg:pl-[2%] xl:pb-14">
         <figure className="">
           <img src={navimg} alt="img-title" className= "w-[50%] lg:w-[32%]" />
         </figure>

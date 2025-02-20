@@ -1,105 +1,54 @@
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import imgJfr1 from "/images2025/17.jpg";
-import imgJfr2 from "/images2025/compressed/01.webp";
-import imgJfr3 from "/images2025/compressed/02.webp";
-import imgJfr4 from "/images2025/compressed/04.webp";
-import imgJfr5 from "/images2025/compressed/05.webp";
-import imgJfr6 from "/images2025/03.jpg";
-import imgJfr7 from "/images2025/10.jpg";
-
-gsap.registerPlugin(ScrollTrigger);
-
 const Contact = () => {
-  useEffect(() => {
- 
-    const scales = [4, 5, 6, 8, 9, 7, 5];
-
-    gsap.utils.toArray(".el").forEach((el, index) => {
-      gsap.to(el, {
-        scale: scales[index],
-        scrollTrigger: {
-          trigger: ".container-images",
-          start: "top top",
-          end: "bottom bottom",
-          scrub: true,
-          markers: false,
-        },
-      });
-    });
-  }, []);
-
   return (
     <>
-      <div className="section before">
-        <div className="w-full h-screen flex justify-center items-center text-red-500">
-          <p>DATES</p>
-        </div>
-      </div>
-      <div className="container-images">
-        <div className="sticky">
-          <div class="el">
-            <div class="imageContainer">
-              <img
-                src={imgJfr1}
-                alt=""
-              />
+      <div className="section after bg-zinc-800">
+        <div className="w-full h-screen flex flex-col justify-center items-center lg:w-1/2 lg:self-start">
+          <article className="flex flex-col pt-16 justify-center items-center text-balance text-center gap-4 lg:pt-0 xl:gap-6">
+            <h6 className="font-text2 font-semibold text-6xl text-whiteCustom xl:text-7xl">
+              LET'S TALK
+            </h6>
+            <p className="text-stone-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Sapiente, et aspernatur? Accusantium fuga nulla
+            </p>
+          </article>
+          <div className="w-full max-w-md  mt-12 font-title text-sm flex flex-col justify-center lg:mt-6">
+            <div className="w-full max-w-md bg-gray-800 rounded-lg p-6">
+              <form className="flex flex-col w-full">
+                <input
+                  placeholder="Email address "
+                  className=" text-stone-600 border border-stone-700 rounded-md p-2 mb-4 bg-transparent focus:outline-none focus:ring-1 transition ease-in-out duration-150 placeholder:text-stone-600"
+                  type="email"
+                />
+                <input
+                  placeholder="WhatsApp"
+                  className="text-stone-600 border border-stone-700 rounded-md p-2 mb-4 bg-transparent focus:outline-none focus:ring-1 transition ease-in-out duration-150 placeholder:text-stone-600"
+                />
+                <textarea
+                  placeholder="Message"
+                  className=" text-stone-600 h-[120px] border border-stone-700 rounded-md p-2 mb-4 bg-transparent focus:outline-none focus:ring-1 transition ease-in-out duration-150 placeholder:text-stone-600"
+                  type="email"
+                />
+                <button
+                  className="bg-gradient-to-tl border border-red-500 font-text2 text-red-500  py-2 px-4 rounded-md mt-4 transition ease-in-out duration-150"
+                  type="submit"
+                >
+                  Send message
+                </button>
+              </form>
             </div>
           </div>
-          <div class="el">
-            <div class="imageContainer">
-              <img
-                src={imgJfr2}
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="el">
-            <div class="imageContainer">
-              <img
-                src={imgJfr3}
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="el">
-            <div class="imageContainer">
-              <img
-                src={imgJfr4}
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="el">
-            <div class="imageContainer">
-              <img
-                src={imgJfr5}
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="el">
-            <div class="imageContainer">
-              <img
-                src={imgJfr6}
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="el">
-            <div class="imageContainer">
-              <img
-                src={imgJfr7}
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="section after">
-        <div>
-          <p>CONTACT</p>{" "}
+          <ul className="flex justify-center items-center gap-9 pt-8 text-stone-600 text-4xl lg:gap-16">
+            <li>
+              <i className="bx bxl-instagram hover:text-red-500 duration-500 hover:scale-105 hover:cursor-pointer"></i>
+            </li>
+            <li>
+              <i className="bx bxl-facebook hover:text-red-500 duration-500 hover:scale-105 hover:cursor-pointer"></i>
+            </li>
+            <li>
+              <i className="bx bxl-twitter hover:text-red-500 duration-500 hover:scale-105 hover:cursor-pointer"></i>
+            </li>
+          </ul>
         </div>
       </div>
     </>

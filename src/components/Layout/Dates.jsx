@@ -1,23 +1,81 @@
 import imgDates from "/images2025/17.jpg";
-const Dates = () => {
-  return (
-    <section className="relative flex flex-col items-center justify-center w-full h-screen">
-      <figure className="absolute inset-0 ">
-        <img
-          src={imgDates}
-          className="w-full h-full object-center object-cover"
-          alt="img-Dates"
-        />
-      </figure>
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import imgJfr1 from "/images2025/17.jpg";
+import imgJfr2 from "/images2025/compressed/01.webp";
+import imgJfr3 from "/images2025/compressed/02.webp";
+import imgJfr4 from "/images2025/compressed/04.webp";
+import imgJfr5 from "/images2025/compressed/05.webp";
+import imgJfr6 from "/images2025/03.jpg";
+import imgJfr7 from "/images2025/10.jpg";
 
-      <article>
-        <h1>JFR</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, nemo
-          id eaque quasi cum deleniti repudiandae sunt numquam.
-        </p>
-      </article>
-    </section>
+gsap.registerPlugin(ScrollTrigger);
+
+const Dates = () => {
+  useEffect(() => {
+    const scales = [4, 5, 6, 8, 9, 7, 5];
+
+    gsap.utils.toArray(".el").forEach((el, index) => {
+      gsap.to(el, {
+        scale: scales[index],
+        scrollTrigger: {
+          trigger: ".container-images",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: true,
+          markers: false,
+        },
+      });
+    });
+  }, []);
+  return (
+    <>
+      <div className="section before">
+        <div className="w-full h-screen flex justify-center items-center text-red-500">
+          <p>DATES</p>
+        </div>
+      </div>
+      <div className="container-images">
+        <div className="sticky">
+          <div class="el">
+            <div class="imageContainer">
+              <img src={imgJfr1} alt="" />
+            </div>
+          </div>
+          <div class="el">
+            <div class="imageContainer">
+              <img src={imgJfr2} alt="" />
+            </div>
+          </div>
+          <div class="el">
+            <div class="imageContainer">
+              <img src={imgJfr3} alt="" />
+            </div>
+          </div>
+          <div class="el">
+            <div class="imageContainer">
+              <img src={imgJfr4} alt="" />
+            </div>
+          </div>
+          <div class="el">
+            <div class="imageContainer">
+              <img src={imgJfr5} alt="" />
+            </div>
+          </div>
+          <div class="el">
+            <div class="imageContainer">
+              <img src={imgJfr6} alt="" />
+            </div>
+          </div>
+          <div class="el">
+            <div class="imageContainer">
+              <img src={imgJfr7} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -21,7 +21,8 @@ export default {
         gray: "#808080",
       },
       fontFamily: {
-        title: ["Orbitron", "serif"],
+        title: ["Montserrat", "sans-serif"],
+        title2: ["Orbitron", "serif"],
         text: ["Rubik", "serif"],
         text2: ["Noto Sans", "serif"],
       },
